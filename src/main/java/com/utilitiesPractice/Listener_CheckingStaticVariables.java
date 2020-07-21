@@ -10,45 +10,45 @@ public class Listener_CheckingStaticVariables extends Base_Practice implements I
 
 	public void onTestStart(ITestResult result) {
 		System.out.println("***************** On Test Method Start ******************");
-		System.out.println("The value of static variable 'i' is : "+i);
-		
+		System.out.println("The value of static variable 'i' is : ");
+
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("***************** On Test Method Completion ******************");
-		System.out.println("The value of static variable 'i' is : "+i);
-		
+		System.out.println("The value of static variable 'i' is : ");
+
 		System.out.println("************** Calling update 'i' utility *********************");
 		int j=Utility_TestTheValueOfStaticVariable.returnUpdated_i_value();
 		System.out.println("*************** Printing updated 'i' value ********************");
-		System.out.println("The updated value of 'i' is : "+j);
-		
-		
+		System.out.println("The updated value of 'i' is : ");
+
+
 	}
 
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
