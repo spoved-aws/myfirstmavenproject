@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ParallelCrossBrowserTestingSuite">
+	<listeners>
+		<listener class-name="com.utilities.RetryListener" />
+		<listener class-name="com.utilities.Reporter_ITestListenerInterface" />
+	</listeners>
+	<test name="Chrome">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.testclasses.TP_NextPageTest">
+				<methods>
+					<exclude name="addToCart"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Firefox">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="com.testclasses.TP_NextPageTest">
+				<methods>
+					<exclude name="addToCart"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+	

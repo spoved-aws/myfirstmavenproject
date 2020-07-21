@@ -1,0 +1,38 @@
+<suite name="SuiteName" parallel="tests" thread-count="2">
+	<!-- <test name="ChromeTest"> -->
+	<!-- <parameter name="browser" value="chrome" /> -->
+
+	<!-- <classes> -->
+	<!-- <class name="com.testclasses.TP_LoginPageTest"> -->
+	<!-- <methods> -->
+	<!-- <include name="loginTest" /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- <class name="com.testclasses.TP_HomePageTest"> -->
+	<!-- <methods> -->
+	<!-- <include name="simpleTest" /> -->
+	<!-- <exclude /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- </classes> -->
+
+
+	<!-- </test> -->
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="com.testclasses.TP_LoginPageTest">
+				<methods>
+					<include name="loginTest" />
+				</methods>
+			</class>
+			<class name="com.testclasses.TP_HomePageTest">
+				<methods>
+					<include name="simpleTest" />
+					<exclude />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

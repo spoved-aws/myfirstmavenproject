@@ -1,0 +1,25 @@
+<suite name="RetryAnalyzerSuite" parallel = "tests" thread-count="2">
+	<listeners>
+		<listener
+			class-name="com.utilitiesPractice.RetryListenerPractice"></listener>
+
+	</listeners>
+
+	<test name="ChromTest-RetryAnalyzer">
+		<parameter name="browser" value="chrome" />
+		<packages>
+			<package name="com.practiceTestClasses" />
+		</packages>
+
+
+	</test>
+
+	<test name="FirefoxTest-RetryAnalyzer">
+		<parameter name="browser" value="firefox" />
+		<packages>
+			<package name="com.practiceTestClasses" />
+		</packages>
+
+
+	</test>
+</suite>

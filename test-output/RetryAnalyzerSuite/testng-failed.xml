@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [RetryAnalyzerSuite]" parallel="methods">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.utilitiesPractice.RetryListenerPractice"/>
+    <listener class-name="com.utilitiesPractice.FailureListener"/>
+  </listeners>
+  <test name="ChromeTest-ScreenshotTest(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.practiceTestClasses.ScreenshotTest">
+        <methods>
+          <include name="anushaMethod3"/>
+          <include name="anushaMethod1"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="anushaMethod2"/>
+        </methods>
+      </class> <!-- com.practiceTestClasses.ScreenshotTest -->
+    </classes>
+  </test> <!-- ChromeTest-ScreenshotTest(failed) -->
+  <test name="FirefoxTest-ScreenshotTest(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.practiceTestClasses.ScreenshotTest">
+        <methods>
+          <include name="anushaMethod3"/>
+          <include name="anushaMethod1"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="anushaMethod2"/>
+        </methods>
+      </class> <!-- com.practiceTestClasses.ScreenshotTest -->
+    </classes>
+  </test> <!-- FirefoxTest-ScreenshotTest(failed) -->
+</suite> <!-- Failed suite [RetryAnalyzerSuite] -->

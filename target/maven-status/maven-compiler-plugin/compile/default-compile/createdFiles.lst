@@ -1,0 +1,4 @@
+com\utilities\ReadConfig.class
+com\base\TP_Base.class
+com\pageclasses\TP_LoginPage.class
+com\pageclasses\TP_HomePage.class
